@@ -2,7 +2,6 @@
 <html>
 
 <head>
-  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- Mobile Metas -->
@@ -44,7 +43,6 @@
       </div>
     </div>
 
-    <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -56,8 +54,8 @@
               <li class="nav-item ">
                 <a class="nav-link" href="index.html">Home </a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="about.html"> About <span class="sr-only">(current)</span> </a>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html"> About </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="service.html">Services</a>
@@ -68,8 +66,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="team.html">Team</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="Login-form.html"> <i class="fa fa-user" aria-hidden="true"></i> Login</a>
               </li>
               
             </ul>
@@ -77,18 +75,42 @@
         </nav>
       </div>
     </header>
-    <!-- end header section -->
   </div>
 
-  <div class="about_section">
-MAHA IS DA BEST
-
-
-
+  <div class="about_section layout_padding prop">
+    
+        <h2 id="h12" style=" border-bottom: 2px solid white ;
+        padding-bottom: 20px;"> Sign up Student   </h2>
+      <div class="form-group">
+        <label for="subject"> Filiere :</label> 
+      <select id="filiere" name="filiere"  style="width:255px;height: 30px;">
+      <option value="" name="filiere">Select...</option>
+      <option value="CS" name="filiere">CS </option>
+      <option value="IRS" name="filiere">IRS </option>
+      <option value="SE" name="filiere">SE </option>
+      <option value="IDL" name="filiere">IDL </option>
+      <option value="IDISC" name="filiere">IDISC</option>
+      <option value="ISEOC" name="filiere">ISEOC</option>
+      </select>
+      <div class="form-group">
+        <label>Groupe:</label>
+        <input type="number"style="width:255px;height: 30px;" min="1" max="5" >
+    </div>
+      <div class="form-group">
+        <label>Skills:</label>
+        <textarea rows="8" placeholder="Enter your skills"></textarea>
+    </div>
+    </div>
+    
+        <div class="form-group">
+            <label> Confirm Password :</label>
+            <input type="password" placeholder="Enter your password"  style="width:255px;height: 30px;">
+        </div>
+        <div class="form-group"> 
+          <input type="submit" style="margin-left: 660px;margin-top: 20px; width: 160px ;height: 40px" class="but" type="sign up">
+    </div>
+    
   </div>
-
-  <!-- info section -->
-
   <section class="info_section ">
     <div class="container">
       <div class="row">
@@ -160,7 +182,6 @@ MAHA IS DA BEST
     </div>
   </section>
 
-  <!-- end info section -->
 
 </body>
 
