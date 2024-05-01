@@ -148,11 +148,11 @@ background-color: #f8f8f9;}
 
 
 .custom_nav-container .navbar-nav{
- padding-left: 700px ;
+ padding-left: 750px ;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
-  padding: 5px 20px;
+  padding: 0px 10px;
   color: black;
   text-align: center;
   text-transform: uppercase;
@@ -166,7 +166,7 @@ background-color: #f8f8f9;}
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  font-weight: 800;
+  font-weight: 500;
 }
 
 .custom_nav-container .nav_search-btn {
@@ -253,6 +253,7 @@ background-color: #f8f8f9;}
           align-items: center;
   position: relative;
   padding: 45px 0 145px 0;
+  background-color: #00204a;
 }
 
 .slider_section .row {
@@ -497,6 +498,7 @@ background-color: #f8f8f9;}
 
 .about_section .detail-box h3 {
   font-weight: bold;
+  color: #00bbf0;
 }
 
 .about_section .detail-box p {
@@ -762,6 +764,23 @@ background-color: #f8f8f9;}
           box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
 }
 
+
+
+.underline {
+  width: 100%;
+  height: 1px;
+  background-color: black; /* You can change the color as desired */
+  margin-top: 1px; /* Adjust as needed to position the line */
+}
+#under{
+  height: 3px;
+color: white ;/* You can change the color as desired */
+  margin-top:10px; }
+#name{
+  color: #00204a;font-weight: bold;margin-top: -15px;
+}
+
+
 .client_section .owl-carousel .owl-nav .owl-prev:hover,
 .client_section .owl-carousel .owl-nav .owl-next:hover {
   color: #00204a;
@@ -769,19 +788,20 @@ background-color: #f8f8f9;}
 
 /* client section end */
 .info_section {
-  background-color: #00204a;
-  color: #ffffff;
-  padding: 45px 0 15px 0;
+  background-color: #ffffff;
+  color: #00204a;
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  padding-left:270px;
+
 }
 
 .info_section h4 {
   font-weight: 600;
-  margin-bottom: 20px;
+
 }
 
-.info_section .info_col {
-  margin-bottom: 30px;
-}
 
 .info_section .info_contact .contact_link_box {
   display: -webkit-box;
@@ -795,7 +815,7 @@ background-color: #f8f8f9;}
 
 .info_section .info_contact .contact_link_box a {
   margin: 5px 0;
-  color: #ffffff;
+  color: #00204a;
 }
 
 .info_section .info_contact .contact_link_box a i {
@@ -810,8 +830,6 @@ background-color: #f8f8f9;}
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 10px;
 }
 
 .info_section .info_social a {
@@ -854,7 +872,7 @@ background-color: #f8f8f9;}
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 15px;
-  color: #ffffff;
+  color: #00204a;
 }
 
 .info_section .info_links a:hover {
@@ -863,44 +881,88 @@ background-color: #f8f8f9;}
 
 .info_section form input {
   border: none;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #00204a;
   background-color: transparent;
   width: 100%;
   height: 45px;
-  color: #ffffff;
+  color: #00204a;
   outline: none;
 }
 
 .info_section form input::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #00204a;
 }
 
 .info_section form input:-ms-input-placeholder {
-  color: #ffffff;
+  color: #002b64;
 }
 
 .info_section form input::-ms-input-placeholder {
-  color: #ffffff;
+  color: #002b64;
 }
 
 .info_section form input::placeholder {
-  color: #ffffff;
+  color: #002b64;
 }
 
 .info_section form button {
   width: 100%;
   text-align: center;
-  display: inline-block;
   padding: 10px 55px;
-  background-color: #00bbf0;
+  background-color: #00204a;
   color: #ffffff;
   border-radius: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border: none;
+  border: black;
   margin-top: 15px;
 }
 
+.prop{
+  text-align: center;
+  display: flex;
+  justify-content:center;
+  flex-direction:column
+}
+.form-group {
+  margin-bottom: 20px;
+
+
+
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+textarea{  width:250px;height: 80px;}
+input[type="text"] {
+
+  padding: 8px;
+  border: 1px solid #ccc;
+  width:250px;height: 50px;
+}
+.skills-group {
+  margin-top: 10px;
+}
+.skills-group label {
+  display: inline-block;
+  margin-right: 10px;
+  
+}
+#skills{  width:250px;height: 50px;}
+.but{width:300px;height: 50px;
+  text-align: center;
+  display: flex;
+  padding: 10px 55px;
+  background-color: #ffffff;
+  color: #00204a;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: black;
+  font-weight: bolder;
+  margin-left: 50px;}
+.but:hover{background-color: #007fa4; color: #f8f8f9;}
 .info_section form button:hover {
   background-color: #007fa4;
 }
