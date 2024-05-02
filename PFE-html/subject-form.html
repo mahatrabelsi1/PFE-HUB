@@ -67,25 +67,25 @@
   </div>
 
   <div class="about_section layout_padding prop">
-    
+    <form action="php/submitSubject.php" method="post">
         <h2 id="h12" style=" border-bottom: 2px solid white ;
         padding-bottom: 20px;">Subject Application Form</h2>
-     
+    
         <div class="form-group">
             <label for="subject">Subject Name:</label>
             <input type="text" id="subject" name="subject" placeholder="Enter subject name">
         </div>
         <div class="form-group">
             <label>Description Zone:</label>
-            <textarea rows="4" placeholder="Enter description here"></textarea>
+            <textarea rows="4" placeholder="Enter description here"   name="description"></textarea>
         </div>
         <div class="form-group">
           <label for="skills">Needed Skills:</label>
-          <textarea rows="6" placeholder="Enter needed skills"></textarea>
-          <input type="submit" value="ADD SUBJECT " style="margin-left: 615px;margin-top: 20px; width:250px;height: 50px" class="but" type="submit">
+          <textarea rows="6" placeholder="Enter needed skills" name="skills_required"></textarea>
+          <input type="submit" value="ADD SUBJECT " style="margin-left: 615px;margin-top: 20px; width:250px;height: 50px" class="but" >
      
         </div>
-
+    </form>
   </div>
   <section class="info_section ">
     <div class="container">

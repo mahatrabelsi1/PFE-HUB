@@ -1,13 +1,24 @@
+
 <!DOCTYPE html>
+<?php
+session_start();  // Start or resume a session
+
+if (!isset($_SESSION['username'])) {
+    // If the session variable username is not set, redirect to login page
+    header("Location: login.php");
+    exit;
+}
+?>
 <html>
 
 <head>
- 
+  
+  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  
+  <!-- Site Metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
@@ -15,15 +26,23 @@
 
   <title> PFE-HUB</title>
 
+  <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
+  <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
+  <!--owl slider stylesheet -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
+  <!-- font awesome style -->
   <link href="css/font-awesome.min.css" rel="stylesheet" />
 
+  <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
 </head>
 
 <body class="sub_page">
@@ -36,7 +55,7 @@
       </div>
     </div>
 
-    
+    <!-- header section strats -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -54,12 +73,14 @@
               <li class="nav-item">
                 <a class="nav-link" href="service.html">Services</a>
               </li>
-
               <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
+                <a class="nav-link" href="why.html">Why Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="account.html"> <i class="fa fa-user" aria-hidden="true"></i> User</a>
+                <a class="nav-link" href="logOut.html">LogOut</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> User</a>
               </li>
               
             </ul>
@@ -67,20 +88,21 @@
         </nav>
       </div>
     </header>
-
+    <!-- end header section -->
   </div>
 
   <div class="about_section layout_padding">
     <div class="prop" style="flex-direction:row">
-      <button id="navigation-button" class="but" type="submit" style="width: fit-content;">
-        Add A Subject
+      <button id="navigation-button" class="but" type="submit">
+        ADD A SUBJECT
       </button>
-      <button  id="navigation-button1" class="but" type="submit" style="width: fit-content;">
-        Proposed Subjects 
+      <button  id="navigation-button1" class="but" type="submit">
+        PROPOSED SUBJECTS
       </button>
       <button  id="navigation-button2" class="but" type="submit" style="width: fit-content;">
         Become Head of department
       </button>
+
     </div>
 
     <script>
@@ -88,12 +110,16 @@
           window.location.href = "subject-form.html";
       });
       document.getElementById("navigation-button1").addEventListener("click", function() {
-          window.location.href = "subject-prop.html";
+          window.location.href = "subject-propt.php";
+      });
+      document.getElementById("navigation-button2").addEventListener("click", function() {
+          window.location.href = "head-dep.html";
       });
   </script>
 
   </div>
 
+  <!-- info section -->
 
   <section class="info_section ">
     <div class="container">
@@ -166,6 +192,7 @@
     </div>
   </section>
 
+  <!-- end info section -->
 
 </body>
 

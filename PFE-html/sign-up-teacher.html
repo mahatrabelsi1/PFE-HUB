@@ -66,22 +66,22 @@
     
         <h2 id="h12" style=" border-bottom: 2px solid white ;
         padding-bottom: 20px;"> Sign up Teacher  </h2>
-      <div class="form-group">
-        <label for="department"> Department :</label> 
-      <select id="department" name="department"  style="width:255px;height: 30px;">
-      <option value="" name="department">Select...</option>
-      <option value="GLSI" name="department">GLSI</option>
-      <option value="GTR" name="department"> GTR </option>
-      <option value="GEII" name="department">GEII</option>
-      <option value="MA" name="department">MA </option>
-      </select>
-    </div>
+      <form action="php/teacherSignup.php" method="post">
+        <div class="form-group">
+       
         
-        <div class="form-group"> 
-          <a href="#">
-            <input type="submit" style="margin-left: 660px;margin-top: 20px; width: 160px ;height: 40px" class="but" type="sign up">
-      
-        </a>
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <select id="department" name="department" style="width:255px;height: 30px;">
+                <option value="">Select...</option>
+                <option value="GLSI">GLSI</option>
+                <option value="GTR">GTR</option>
+                <option value="GEII">GEII</option>
+                <option value="MA">MA</option>
+            </select>
+        </div>
+        <button type="submit" name="submit" style="margin-left: 660px;margin-top: 20px; width: 160px; height: 40px" class="but">Sign Up</button>
+    </form>
     </div>
 
   </div>
